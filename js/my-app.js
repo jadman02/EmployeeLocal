@@ -13,7 +13,7 @@ var $$ = Dom7;
 myApp.onPageInit('index', function (page) {
   //Do something here with home page
 
-getEmployeeList();
+
 
 
 
@@ -42,32 +42,6 @@ myApp.onPageInit('about', function (page) {
 });
 
 
-
-var serviceURL = "http://smilesavers.net.au/";
-
-var employees;
-
-$(document).ajaxError(function(event, request, settings) {
-	$('#busy').hide();
-	alert("Error accessing the server");
-});
-
-
-function getEmployeeList() {
-	$('#busy').show();
-	$.getJSON(serviceURL + 'getemployees.php', function(data) {
-		$('#busy').hide();
-		$('#employeeList li').remove();
-		employees = data.items;
-		$.each(employees, function(index, employee) {
-			$('#employeeList').append('<li><a href="employeedetails.html?id=' + employee.id + '">' +
-					'<img src="pics/' + employee.picture + '" class="list-icon"/>' +
-					'<p class="line1">' + employee.firstName + ' ' + employee.lastName + '</p>' +
-					'<p class="line2">' + employee.title + '</p>' +
-					'<span class="bubble">' + employee.reportCount + '</span></a></li>');
-		});
-	});
-}
 
 // Generate dynamic page
 var dynamicPageIndex = 0;
