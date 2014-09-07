@@ -1,5 +1,4 @@
 <?php
-include 'config.php';
 
 $dbuser = 'jadman02';
 $dbpass = 'Jadman9227!';
