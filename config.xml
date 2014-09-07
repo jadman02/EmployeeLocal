@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<widget xmlns       = "http://www.w3.org/ns/widgets"
+        xmlns:gap   = "http://phonegap.com/ns/1.0"
+        id          = "org.coenraets.employeedirectory"
+        versionCode = "10"
+        version     = "1.1.0">
+ 
+    <name>Employee Local Test</name>
+ 
+    <description>
+       JSON
+    </description>
+ 
+    <author href="http://www.likermob.com" email="jadman02@hotmail.com">
+        Jarrod Dean
+    </author>
+ 
+<access origin="http://smilesavers.net.au"/>
+ 
+ <gap:platform name="ios" />
+ <preference name="orientation" value="portrait" />
+ 
+ <preference name="DisallowOverscroll" value="true" />
+ 
+</widget>
