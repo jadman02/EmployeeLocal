@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <widget xmlns       = "http://www.w3.org/ns/widgets"
         xmlns:gap   = "http://phonegap.com/ns/1.0"
-        id          = "au.net.smilesavers.employeedirectory"
+        id          = "com.likermob.app"
         versionCode = "10"
         version     = "1.1.0">
  
-    <name>Employee Local Test</name>
+    <name>Likermob</name>
  
     <description>
-       JSON
+       Save on things you like!
     </description>
  
     <author href="http://www.likermob.com" email="jadman02@hotmail.com">
@@ -16,6 +16,12 @@
     </author>
  
 <access origin="http://smilesavers.net.au"/>
+ 
+ 
+
+    <feature name="http://api.phonegap.com/1.0/geolocation"/>
+    <feature name="http://api.phonegap.com/1.0/network"/>
+    <feature name="http://api.phonegap.com/1.0/notification"/>
  
  <gap:platform name="ios" />
  <preference name="orientation" value="portrait" />
