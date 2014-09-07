@@ -1,5 +1,4 @@
-localStorage['serviceURL'] = "http://coenraets.org/apps/directory/services/";
-var serviceURL = localStorage['serviceURL'];
+var serviceURL = "http://smilesavers.net.au/";
 
 var scroll = new iScroll('wrapper', { vScrollbar: false, hScrollbar:false, hScroll: false });
 
