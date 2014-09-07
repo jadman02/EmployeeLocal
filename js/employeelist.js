@@ -1,5 +1,7 @@
 var serviceURL = "http://smilesavers.net.au/";
 
+var scroll = new iScroll('wrapper', { vScrollbar: false, hScrollbar:false, hScroll: false });
+
 var employees;
 
 $(window).load(function() {

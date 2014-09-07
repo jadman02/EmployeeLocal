@@ -1,6 +1,9 @@
 <?php
 
-include 'config.php';
+$dbuser = 'jadman02';
+$dbpass = 'Jadman9227!';
+$dbname = 'jadman02';
+$dbhost = 'jadman02.db.10511561.hostedresource.com';
 
 $sql = "select e.id, e.firstName, e.lastName, e.managerId, e.title, e.department, e.city, e.officePhone, e.cellPhone, " .
 		"e.email, e.picture, m.firstName managerFirstName, m.lastName managerLastName, count(r.id) reportCount " . 

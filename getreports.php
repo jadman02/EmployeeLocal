@@ -1,5 +1,8 @@
 <?php
-include 'config.php';
+$dbuser = 'jadman02';
+$dbpass = 'Jadman9227!';
+$dbname = 'jadman02';
+$dbhost = 'jadman02.db.10511561.hostedresource.com';
 
 $sql = "select e.id, e.firstName, e.lastName, e.title, count(r.id) reportCount " . 
 		"from employee e left join employee r on r.managerId = e.id " .
